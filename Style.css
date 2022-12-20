@@ -51,6 +51,9 @@ header {
     font-size: 20px;
     font-weight: 550px;
 }
+.navbar-contents a:hover{
+    color: yellow;
+}
 
 .navbar ul {
 
@@ -157,8 +160,8 @@ header {
     font-family: 'Unbounded';
     line-height: 1.5;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
+    /* transform: translateY(-50%); */
    
 
     
@@ -197,15 +200,19 @@ header {
     position: relative;
     top: 7px;
     margin-right: 20px;
-
+    transform: skew(-10deg, -10deg);
 }
-.main-body-container h5{
+
+.Comapany{
     font-family: sans-serif;
-    margin-top: 20px;
+    
     letter-spacing: 2px;
     text-transform: uppercase;
     color: white;
-    
+    max-width: 80%;
+    margin: auto;
+    margin-top: 20px;
+
 }
 .socialMedias{
     width: 40px;
@@ -214,17 +221,22 @@ header {
     flex-direction: column;
     position: absolute;
     right: 0;
-color: white;
+    top: 50%;
+ color: white;
    
 }
 .socialMedias i{
-    margin-top: 40px;
+    margin-top: 25px;
     font-size: 1;
     
 }
+.booknow-text:hover{
+    color: yellow;
+   
+}
 .socialMedias i:hover{
     animation: Socialmedia 1s ease;
-
+    color: yellow;
 }
 @keyframes Socialmedia {
     
@@ -236,5 +248,99 @@ color: white;
     }
     100%{
         transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width:796px) {
+    .main-body-container .main-text{
+        font-size: 8vw;
+        max-width: 700px;
+        margin: auto;
+    }
+    .main-body-container span{
+        font-size: 20px;
+    }
+    
+    
+}
+@media(max-width:600px) {
+.main-text-container .main-text {
+        font-size: 10vw;
+        max-width: 500px; 
+        margin: auto;
+        
+    }
+    .main-body-container span{
+        font-size: 18px;
+    }
+}
+@media(max-width:510px) {
+.main-text-container .main-text {
+        font-size: 10vw;
+        max-width: 400px; 
+        margin: auto;
+      
+        
+    }
+    .main-body-container span{
+        font-size: 18px;
+        line-height: 3;
+    }
+    .main-body-container a{
+        font-size: 20px;
+        font-weight: 700; 
+        margin:auto;
+        line-height: 3;
+    }
+    .Comapany{
+       
+        max-width: 60%;
+        margin: auto;
+      
+    
+    }
+}
+@media(max-width:410px) {
+.main-text-container .main-text {
+        font-size: 10vw;
+        max-width: 300px; 
+       
+        
+    }
+    .main-body-container span{
+        font-size: 15px;
+    }
+}
+@media(max-width:320px) {
+.main-text-container .main-text {
+        font-size: 14vw;
+        max-width: 200px; 
+       
+        
+    }
+    .main-body-container span{
+        font-size: 18px;
+    }
+    .main-body-container a{
+        
+        font-size: 18px;
+    
+        font-weight: 700;
+        
+        margin-right: 50px;
+       
+    }
+    
+}
+@media(max-width:200px) {
+.main-text-container .main-text {
+        font-size: 14vw;
+        max-width: 100px; 
+       
+        
+    }
+    .main-body-container span{
+        font-size: 18px;
+        max-width: 70px
     }
 }
