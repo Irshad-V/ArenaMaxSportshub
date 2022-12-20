@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(images/abstract-blur-empty-green-gradient-studio-well-use-as-backgroundwebsite-templateframebusiness-report.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 200vh;
+
+}
+
+header {
+    width: 100%;
+    height: 60px;
+ 
+}
+
+.navbar {
+    
+    width: 100%;
+    height: 60px;
+    background-color: rgba(3, 46, 14, .8);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    position: fixed;
+    z-index:1;
+
+}
+
+.navbar-contents {
+    list-style-type: none;
+    margin-left: 15px;
+
+
+}
+
+.navbar-contents a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 550px;
+}
+
+.navbar ul {
+
+    margin-right: 30px;
+    margin-left: 20px;
+    display: flex;
+
+}
+
+#Logo {
+    width: 81px;
+    height: 81px;
+
+    animation: BallRotate 4s linear infinite;
+
+}
+
+@keyframes BallRotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+#icon-nav {
+    display: none;
+    cursor: pointer;
+
+}
+
+
+@media(max-width:862px) {
+    .navbar {
+        width: 100%;
+        height: 60px;
+        background-color: rgba(3, 46, 14, .8);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        position: relative;
+        position: fixed;
+
+    }
+
+    .logo-image-box {
+        position: absolute;
+        left: 5%;
+
+    }
+
+    #Hide-nav {
+        display: none;
+    }
+
+    #icon-nav {
+
+        display: flex;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin-right: 9px;
+        position: absolute;
+        right: 0%;
+     
+
+
+    }
+    .nav-deatails{
+        visibility: hidden;
+        flex-direction: column;
+        position: absolute;
+        right: 0%;
+        top: 100%;
+
+    }
+    .navbar i:hover .nav-deatails{
+       visibility: visible;
+    }
+    .nav-deatails li{
+       
+        margin-top: 30px;
+    }
+    
+}
+/* navbar closed */
+/* main body  */
+.main body{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: aqua;
+}
+
+.main-body-container {
+   
+    width: 100%;
+    text-align: center;
+    font-family: 'Unbounded';
+    line-height: 1.5;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   
+
+    
+}
+.main-body-container .main-text{
+    font-size: 7vw;
+    color: #fff;
+    font-weight: 700;
+
+}
+.main-body-container span{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    
+   
+}
+.main-body-container a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+    margin-left: 114px;
+    font-family: sans-serif;
+    margin-top: 40px;
+}
+.main-body-container a::before{
+    content: "  ";
+    width:10px;
+    height:25px;
+    display: inline-block;
+    background: red;
+    position: relative;
+    top: 7px;
+    margin-right: 20px;
+
+}
+.main-body-container h5{
+    font-family: sans-serif;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    
+}
+.socialMedias{
+    width: 40px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+color: white;
+   
+}
+.socialMedias i{
+    margin-top: 40px;
+    font-size: 1;
+    
+}
+.socialMedias i:hover{
+    animation: Socialmedia 1s ease;
+
+}
+@keyframes Socialmedia {
+    
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(80deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
