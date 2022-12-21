@@ -153,9 +153,14 @@ header {
 /* main body  */
 .main body {
     width: 100%;
-    height: 100vh;
     color: white;
-    background-color: aqua;
+  
+}
+
+.mainsss{
+    width: 100%;
+    color: white;
+  
 }
 
 .main-body-container {
@@ -164,9 +169,8 @@ header {
     text-align: center;
     font-family: 'Unbounded';
     line-height: 1.5;
-    position: absolute;
-    top: 30%;
-    /* transform: translateY(-50%); */
+    margin-top: 6rem;
+    
 
 
 
@@ -291,15 +295,10 @@ header {
     }
 
     .main-body-container {
-
-
-        position: absolute;
-        top: 20%;
-
-
-
+        margin-top: 3rem;
 
     }
+    
 }
 
 @media only screen and (max-width:400px) {
@@ -367,4 +366,12 @@ header {
         padding: 0rem;
     }
 
+}
+
+.about-short{
+    margin-top: 4222222rem;
+    width: 80%;
+    height: 70vh;
+    background-color: aqua;
+    border: 2px solid blue;
 }
