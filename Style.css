@@ -4,16 +4,34 @@
     box-sizing: border-box;
 }
 
+:root {
+    --clr-background: #005f22;
+    --clr-Font: white;
+    --Heading-font-size: 2.3rem;
+    --font-size: 1.3rem;
+    --hover-font-color :yellow;
+
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(images/abstract-blur-empty-green-gradient-studio-well-use-as-backgroundwebsite-templateframebusiness-report.jpg);
+    background-image: url(https://www.ayrassportshub.com/skin/default/frontend/images/banner-bg.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 200vh;
+    background-position: top;
 
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -154,13 +172,13 @@ header {
 .main body {
     width: 100%;
     color: white;
-  
+
 }
 
-.mainsss{
+.mainsss {
     width: 100%;
     color: white;
-  
+
 }
 
 .main-body-container {
@@ -170,7 +188,7 @@ header {
     font-family: 'Unbounded';
     line-height: 1.5;
     margin-top: 6rem;
-    
+
 
 
 
@@ -298,7 +316,7 @@ header {
         margin-top: 3rem;
 
     }
-    
+
 }
 
 @media only screen and (max-width:400px) {
@@ -368,10 +386,223 @@ header {
 
 }
 
-.about-short{
-    margin-top: 4222222rem;
-    width: 80%;
-    height: 70vh;
-    background-color: aqua;
-    border: 2px solid blue;
+
+.about-short {
+    margin-top: 4rem;
+    width: 100%;
+    padding-right: 5rem;
+    position: relative;
+    min-height: 500px;
+    background-color: var(--clr-background);
+    background-image: url(https://www.ayrassportshub.com/skin/default/frontend/images/about-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-short-container {
+
+    width: 100%;
+    padding-left: 4rem;
+    background-color: #01170a;
+
+
+
+
+}
+
+.about-short-txt {
+    color: white;
+    display: flex;
+
+    justify-content: space-between;
+    padding-top: 5rem;
+    width: 100%;
+    background-image: url(https://www.ayrassportshub.com/skin/default/frontend/images/about-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+
+}
+
+.about-short-txt-heding {
+    width: 140%;
+
+
+
+}
+
+.about-short-txt-heding h1 {
+    font-size: 2em;
+
+
+}
+
+.about-short-main-text {
+    padding:0 2rem;
+
+}
+
+.about-short-main-text p {
+    padding-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+
+}
+
+.explore-more-btn {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    transition: all 1s;
+
+}
+
+.explore::before {
+    content: "";
+    display: inline-block;
+    margin-right: 1rem;
+    width: .9rem;
+    height: 1.8rem;
+    background-color: yellow;
+    position: relative;
+    top: 0;
+    margin-right: 20px;
+    transform: skew(-10deg, -10deg);
+}
+.explore{
+    display: flex;
+}
+
+
+.explore-more-btn:hover {
+    color: #0cc94e;
+
+}
+
+/* responsive about-short */
+@media only screen and (max-width:992px){
+    
+    
+   
+    .about-short-txt{
+        flex-direction: column;
+    }
+    .about-short-main-text {
+        padding-left: 0;
+        padding-top: 2rem;
+        padding-right: 1.8rem;
+        padding-bottom: 2rem;
+    
+    }
+
+}
+@media only screen and (max-width:796px){
+    .about-short{
+        width: 100%;
+        
+    }
+
+    .about-short-main-text {
+        
+        padding-right: 1rem;
+      
+    
+    }
+    .about-short-txt-heding {
+        width: 100%;
+    
+    
+    }
+
+}
+@media only screen and (max-width:400px){
+    
+    .about-short-main-text { 
+        padding-right: .8rem;
+    }
+   
+
+    .explore-more-btn {
+     
+        font-size: 1rem;
+        
+    }
+    .about-short-main-text p {
+       
+        font-size: .8rem;
+        line-height: 1.6;
+    }
+}
+.about-short-txt-heding {
+    width: 40%;
+
+
+}
+
+/* Home page services area with slide images next-previous btn */
+.Home-page-services {
+    width: 100%;
+    min-height: 250px;
+    background-color: var(--clr-background);
+}
+
+.Home-page-services-container {
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.Home-page-services-container-txt-left h1 {
+    margin-bottom: 2rem;
+    display: block;
+    color: var(--clr-Font);
+    font-weight: 500;
+    font-size: var(--Heading-font-size);
+}
+
+.Home-page-services-container-txt-left h1 b {
+    font-weight: 700;
+    font-size: var(--Heading-font-size);
+}
+
+.Home-page-services-container-txt-left span {
+    color: var(--clr-Font);
+    font-weight: 500;
+    font-size: var(--font-size);
+}
+
+.Home-page-services-container-txt-right {
+    display:flex;
+  text-align: center;
+}
+.Home-page-services-container-txt-right {
+  
+   
+}
+
+.Home-page-services-container-txt-right::before {
+    content: "";
+    display: block;
+    width: 1rem;
+    height: 4rem;
+    background-color: yellow;
+    transform: skew(-10deg ,-10deg);
+    position: absolute;
+    top: 2rem;
+    right: 140px;
+    
+}
+
+.casroul-btn {
+    margin-left: 3rem;
+    font-size:var(--font-size) ;
+    color: var(--clr-Font);
+    
+}
+.casroul-btn:hover{
+    color: var(--hover-font-color);
 }
