@@ -12,6 +12,10 @@
     --hover-font-color :yellow;
 
 }
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
     margin: 0;
@@ -308,7 +312,7 @@ header {
     padding: 0 3rem;
 }
 
-@media only screen and (max-width:768px) {
+@media(max-width:768px) {
 
     .main-text-container {
         margin: 0 2rem;
@@ -333,7 +337,7 @@ header {
 
 }
 
-@media only screen and (max-width:400px) {
+@media(max-width:400px) {
 
     .main-body-container .main-text {
         font-size: 3rem;
@@ -346,7 +350,7 @@ header {
 
 }
 
-@media only screen and (max-width:282px) {
+@media(max-width:282px) {
     .socialMedias {
 
         display: none;
@@ -380,7 +384,7 @@ header {
     }
 }
 
-@media only screen and (max-width:182px) {
+@media(max-width:182px) {
     .main-body-container .main-text {
         font-size: 2rem;
     }
@@ -496,7 +500,7 @@ header {
 }
 
 /* responsive about-short */
-@media only screen and (max-width:992px){
+@media(max-width:992px){
     
     
    
@@ -512,7 +516,7 @@ header {
     }
 
 }
-@media only screen and (max-width:796px){
+@media(max-width:796px){
    
     
 .about-short {
@@ -536,7 +540,7 @@ header {
     }
 
 }
-@media only screen and (max-width:400px){
+@media(max-width:400px){
     
     .about-short-main-text { 
         padding-right: .8rem;
