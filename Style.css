@@ -639,10 +639,7 @@ header {
     display:flex;
   text-align: center;
 }
-.Home-page-services-container-txt-right {
-  
-   
-}
+
 
 .Home-page-services-container-txt-right::before {
     content: "";
