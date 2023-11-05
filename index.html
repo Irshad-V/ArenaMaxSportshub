@@ -23,10 +23,10 @@
         <header>
             <nav class="navbar">
                 <ul class="nav-deatails  ">
-                    <li class="navbar-contents"><a href="#home"> Home </a> </li>
-                    <li class="navbar-contents"><a href="#about"> About </a> </li>
-                    <li class="navbar-contents"><a href="#rules"> Rules </a> </li>
-                    <li class="navbar-contents"><a href="#service"> Service </a> </li>
+                    <li class="navbar-contents  deactive"><a href="#home"> Home </a> </li>
+                    <li class="navbar-contents deactive"><a href="#about"> About </a> </li>
+                    <li class="navbar-contents deactive"><a href="#rules"> Rules </a> </li>
+                    <li class="navbar-contents deactive"><a href="#service"> Service </a> </li>
 
                 </ul>
                 <div class="logo-image-box">
@@ -66,7 +66,7 @@
                         class="fa-brands fa-twitter"></i></a>
                 <a href="https://www.instagram.com/invites/contact/?i=n52po5zezuxw&utm_content=9ihb06h"> <i
                         class="fa-brands fa-instagram"></i></a>
-                        <a   href="https://wa.me/+919526388849/?text=Helloo"><i class="fa-brands fa-whatsapp"></i></i></a>
+                <a href="https://wa.me/+919526388849/?text=Helloo"><i class="fa-brands fa-whatsapp"></i></i></a>
 
             </div>
         </section>
@@ -311,8 +311,8 @@
                     class="fa-brands fa-twitter"></i></a>
             <a href="https://www.instagram.com/invites/contact/?i=n52po5zezuxw&utm_content=9ihb06h"> <i
                     class="fa-brands fa-instagram"></i></a>
-            <a   href="https://wa.me/+919526388849/?text=Helloo"><i class="fa-brands fa-whatsapp"></i></i></a>
-        
+            <a href="https://wa.me/+919526388849/?text=Helloo"><i class="fa-brands fa-whatsapp"></i></i></a>
+
         </div>
 
     </div>
@@ -346,9 +346,15 @@
         visibility = !visibility;
 
     }
+    function togglk() {
+        window.alert("how are yoy")
+    }
 
     document.getElementById('icon-nav').addEventListener('click', toggleMenu);
-
+    const elements = document.getElementsByClassName("deactive"); // Corrected variable name
+    for (const element of elements) {
+        element.addEventListener("click", toggleMenu);
+    }
 
 </script>
 
